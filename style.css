@@ -377,19 +377,19 @@ button:hover {
     }
 
     .side-bar, .side-form {
-        width: 90%;
+        width: 100%;
     }
 
     .side-form {
         height: 60%;
-        gap: 50px;
-        padding: 50px 50px;
+        gap: 10px;
+        padding: 10px 10px;
         border-radius: 10px;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     }
 
     form {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     .side-form .form {
@@ -398,7 +398,7 @@ button:hover {
 }
 
     .side-bar .description{
-    width: 80%;
+    width: 100%;
 }
 
 .row-1, .row-2, .row-3 {
