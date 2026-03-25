@@ -7,9 +7,90 @@
 
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+body {
+    background-image: url(img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main container */
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.side-form {
+    width: 60%;
+    background-color: #fff;
+    height: 100vh;
+}
+
+/* side bar */
+.side-bar {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+}
+
+.side-bar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.114);
+    width: 100%;
+    padding: 10px;
+}
+
+.side-bar h1 {
+    font-family: 'norsebold';
+    font-size: 5rem;
+    color: #fff;
+}
+
+.side-bar img {
+    width: 80px;
+}
+
+.side-bar .credit {
+  /* width: 40%; */
+  /* background-color: rgba(207, 204, 225, 0.515); */
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  height: 70%;
+
+}
+
+.side-bar p {
+    /* font-family: 'norsebold'; */
+    color: #fff;
+    text-align: center;
+}
+
+.side-bar p a:hover {
+    color: rgba(32, 0, 212, 0.875);
+}
+
+
+
