@@ -85,6 +85,10 @@ body {
     color: #fff;
 }
 
+.description span {
+    font-family: 'norsebold';
+}
+
 .side-bar h1 {
     font-family: 'norsebold';
     font-size: 5rem;
@@ -164,6 +168,7 @@ body {
   }
 }
 
+/* sign-up banner */
 .intro .sign-up {
     /* background-color: #fff; */
     background-image: url(img/bg2.jpg);
@@ -219,8 +224,26 @@ form legend {
 
 form input {
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #2B74E3;
     padding: 10px 5px;
+}
+
+input::placeholder {
+    color: #2B74E3;
+    font-size: 0.9rem;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="password"]:valid {
+    border: 1px solid green;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #2B74E3;
 }
 
 form label {
@@ -238,6 +261,18 @@ form .row-1, form .row-2, form .row-3 {
     gap: 20px;
     /* flex-wrap: wrap; */
     /* border: 1px solid #000; */
+}
+
+.col-4 button{
+    width: 30%;
+    color: #fff;
+    background-color: #2B74E3;
+}
+
+.col-4 button:hover {
+    background-color: #fff;
+    color: #2B74E3;
+    border: 1px solid #2B74E3;
 }
 
 .form .col-1, .form .col-2, .form .col-3 {
