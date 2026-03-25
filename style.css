@@ -18,6 +18,7 @@ body {
     background-image: url(img/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 /* main container */
@@ -45,10 +46,13 @@ body {
 
 .cont {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    gap: 10px;
     width: 100%;
-    height: 30%;
+    height: 90%;
+    animation: slideInUp 0.8s ease-out;
 }
 
 .side-bar .logo{
@@ -56,8 +60,29 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.114);
+    backdrop-filter: blur(5px);
     width: 100%;
     padding: 10px;
+    
+}
+
+.side-bar .description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.114);
+    backdrop-filter: blur(5px);
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    height: 50%;
+}
+
+.description h2 {
+    font-family: 'norsebold';
+    font-size: 2.5rem;
+    color: #fff;
 }
 
 .side-bar h1 {
@@ -78,7 +103,7 @@ body {
   flex-direction: column;
   padding: 10px;
   border-radius: 10px;
-  height: 70%;
+  height: 10%;
 
 }
 
@@ -93,4 +118,165 @@ body {
 }
 
 
+/* side-form */
+.side-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2B74E3;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    
+    animation: slideInRight 0.8s ease-out;
 
+}
+
+
+.side-form .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    padding: 0 50px;
+}
+
+/* keyframe */
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px); /* Start 50px below */
+    opacity: 0;                /* Start invisible */
+  }
+  to {
+    transform: translateY(0);    /* End at original position */
+    opacity: 1;                /* End fully visible */
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translatex(50px); /* Start 50px below */
+    opacity: 0;                /* Start invisible */
+  }
+  to {
+    transform: translatex(0);    /* End at original position */
+    opacity: 1;                /* End fully visible */
+  }
+}
+
+.intro .sign-up {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    gap: 10px;
+    animation: slideInUp 0.3s ease-out;
+    animation-delay: 1s;
+}
+
+
+
+.sign-up h2 {
+    color: #2B74E3;
+    font-size: 2rem;
+    font-family: 'norsebold';
+}
+
+.sign-up p {
+    color: #2B74E3;
+}
+
+.side-form .form {
+    /* display: flex;
+    align-items: center; */
+    height: 40%;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 50px;
+    padding-top: 50px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+form legend {
+    font-size: 1.5rem;
+    font-family: 'norsebold';
+    padding-bottom: 20px;
+    color: #2B74E3;
+}
+
+form input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 5px;
+}
+
+form label {
+    font-size: 0.95rem;
+    color: #2B74E3;
+    font-weight: 600;
+}
+
+form .row-1, form .row-2, form .row-3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid #000; */
+}
+
+.form .col-1, .form .col-2, .form .col-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+/* account */
+.side-form .account {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 30%;
+    width: 100%;
+}
+
+.side-form .ac-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    width: 70%;
+    padding: 20px 0px;
+}
+
+.account p {
+    color: #fff;
+}
+
+button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 0;
+    color: #2B74E3;
+    cursor: pointer;
+    animation: slideInUp 0.8s ease-out;
+    animation-delay: 1s;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #2B74E3;
+    border: 1px solid #fff;
+}
