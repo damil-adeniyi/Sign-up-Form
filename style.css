@@ -363,6 +363,10 @@ button:hover {
     width: 60%;
     }
 
+    .col-4 button{
+    width: 40%;
+}
+
 
 }
 
@@ -405,4 +409,9 @@ button:hover {
     flex-wrap: wrap;
 }
 
+.col-4 button{
+    width: 50%;
+    color: #fff;
+    background-color: #2B74E3;
+}
 }
