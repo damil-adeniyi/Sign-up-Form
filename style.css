@@ -26,6 +26,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 1124px;
    
     /* align-items: center; */
 }
@@ -33,7 +34,7 @@ body {
 .side-form {
     width: 60%;
     background-color: #fff;
-    height: 100vh;
+    height: 100%;
 }
 
 /* side bar */
@@ -43,6 +44,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 
 .cont {
@@ -359,6 +361,7 @@ form .row-1, form .row-2, form .row-3 {
         align-items: center;
         gap: 50px;
         padding: 50px 50px;
+        height: fit-content;
     }
 
     .side-bar, .side-form {
@@ -405,6 +408,7 @@ form .row-1, form .row-2, form .row-3 {
         align-items: center;
         gap: 20px;
         padding: 20px 20px;
+        height: fit-content;
     }
 
     .side-bar, .side-form {
