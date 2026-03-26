@@ -378,6 +378,7 @@ form .row-1, form .row-2, form .row-3 {
 
     form {
         padding: 20px 0;
+        width: 100%;
     }
 
     .side-form .form {
@@ -430,6 +431,7 @@ form .row-1, form .row-2, form .row-3 {
 
     form {
         padding: 10px 0;
+        width: 100%;
     }
 
     .side-form .form {
