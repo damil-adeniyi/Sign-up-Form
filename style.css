@@ -275,6 +275,12 @@ form .row-1, form .row-2, form .row-3 {
     width: 30%;
     color: #fff;
     background-color: #2B74E3;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 0;
+    animation: slideInUp 0.8s ease-out;
+    animation-delay: 1s;
+    transition: all 0.3s ease;
 }
 
 .col-4 button:hover {
