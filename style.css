@@ -26,6 +26,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+   
     /* align-items: center; */
 }
 
@@ -227,10 +228,11 @@ form input {
     border-radius: 5px;
     border: 1px solid #2B74E3;
     padding: 10px 5px;
+    color: #2B74E3;
 }
 
 input::placeholder {
-    color: #2B74E3;
+    color: #2b75e338;
     font-size: 0.9rem;
 }
 

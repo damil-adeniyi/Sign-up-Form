@@ -66,19 +66,19 @@
                     <div class="row-1">
                         <div class="col-1">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Thor">
+                        <input type="text" name="first-name" id="first-name" placeholder="Thor" required>
                         </div>
                     
                         <div class="col-1">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Odinson">
+                        <input type="text" name="last-name" id="last-name" placeholder="Odinson" required>
                         </div>
                     </div>
 
                     <div class="row-2">
                         <div class="col-2">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" >
+                        <input type="email" name="email" id="email" required>
                         </div>
                     
                         <div class="col-2">
@@ -91,12 +91,12 @@
                     
                         <div class="col-3">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" pattern="^.{8,}$" title="Password must be at least 8 characters long" required>
                         </div>
 
                         <div class="col-3">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" 
+                        <input type="password" name="confirm-password" id="confirm-password" pattern="^.{8,}$" title="Password must match the entered password" required
                         >
                         </div>
                     </div>
