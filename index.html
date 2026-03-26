@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Sign-up Form" />
     <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -92,12 +93,15 @@
                         <div class="col-3">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" pattern="^.{8,}$" title="Password must be at least 8 characters long" required>
+                        <i class="fa-solid fa-eye" id="togglePassword"></i>
                         </div>
 
                         <div class="col-3">
                         <label for="confirm-password">Confirm Password</label>
+
                         <input type="password" name="confirm-password" id="confirm-password" pattern="^.{8,}$" title="Password must match the entered password" required
                         >
+                        <i class="fa-solid fa-eye" id="togglePassword"></i>
                         </div>
                     </div>
 
@@ -127,6 +131,6 @@
         </div>
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

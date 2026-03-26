@@ -284,6 +284,19 @@ form .row-1, form .row-2, form .row-3 {
     width: 100%;
 }
 
+/* password */
+
+.col-3 {
+    position: relative;
+}
+.col-3 i {
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    cursor: pointer;
+    color: #2B74E3;
+}
+
 
 
 /* account */
