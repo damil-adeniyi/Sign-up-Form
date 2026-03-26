@@ -326,18 +326,19 @@ form .row-1, form .row-2, form .row-3 {
     color: #fff;
 }
 
-button {
+.btn {
     padding: 10px 16px;
     border-radius: 8px;
     border: 0;
     color: #2B74E3;
+    background-color: #fff;
     cursor: pointer;
     animation: slideInUp 0.8s ease-out;
     animation-delay: 1s;
     transition: all 0.3s ease;
 }
 
-button:hover {
+.btn:hover {
     color: #fff;
     background-color: #2B74E3;
     border: 1px solid #fff;
